@@ -2,7 +2,7 @@
 
 
 ## Senaryo-1: Basit Bir Web Uygulaması Oluşturma ve Servisle İzole Etme
-- Basit bir web uygulamasını bir Deployment, ReplicaSet ve bir ClusterIP tipi servis ile izole ederek Kubernetes üzerinde çalıştıracaksınız.İşte adımlar:
+ Basit bir web uygulamasını bir Deployment, ReplicaSet ve bir ClusterIP tipi servis ile izole ederek Kubernetes üzerinde çalıştıracaksınız.İşte adımlar:
 -	Basit bir Python veya Node.js web uygulaması oluşturun.
 - Web uygulamanızı içeren bir Docker imajı oluşturun.
 - Bir Deployment oluşturun ve bu imajı kullanarak uygulamanızı çalıştırın.
@@ -34,7 +34,7 @@ Oluşan servisi kontrol etmek için;
 ```
 
 ## Senaryo-2: İki Ayrı Ortamda Uygulama Dağıtımı
-- Farklı birinci ve ikinci ortamlarda aynı uygulamayı dağıtarak ve dört ayrı Deployment kullanarak Kubernetes'te çalıştıracaksınız. İşte adımlar:
+Farklı birinci ve ikinci ortamlarda aynı uygulamayı dağıtarak ve dört ayrı Deployment kullanarak Kubernetes'te çalıştıracaksınız. İşte adımlar:
 - Bir Python veya Node.js web uygulaması oluşturun.
 - İki farklı Docker imajı oluşturun: "web-app:v1" ve "web-app:v2".
 - İlk ortamda "web-app:v1" Docker imajını kullanarak bir Deployment ve Servis oluşturun.
@@ -82,7 +82,7 @@ Servis manifest dosyası oluşturmak için;
   kubectl create -f service-pythonv2.yaml
 ```
 ## Senaryo-3: Yük Dengelemeli ve Yüksek Erişilebilir Bir Uygulama Dağıtımı
-- Yük dengelemeli ve yüksek erişilebilir bir uygulama dağıtımı oluşturarak Kubernetes becerilerinizi geliştirebilirsiniz. İşte adımlar:
+ Yük dengelemeli ve yüksek erişilebilir bir uygulama dağıtımı oluşturarak Kubernetes becerilerinizi geliştirebilirsiniz. İşte adımlar:
 - Uygulamanızı içeren bir Docker imajı oluşturun.
 - Uygulamanızın yük dengelemesi için birden çok pod içeren bir Deployment oluşturun.
 - Yük dengelemesi yapmak için bir LoadBalancer tipi Servis oluşturun (eğer bir bulut sağlayıcısını kullanıyorsanız, bu sağlayıcının yük dengeleyicisini kullanabilirsiniz).
