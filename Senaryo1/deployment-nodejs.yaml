@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-app-nodejs
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app-nodejs
+  template:
+    metadata:
+      labels:
+        app: app-nodejs
+    spec:
+      containers:
+      - name: app-nodejs
+        image: regaipaydogdu/my-node-app
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
