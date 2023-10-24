@@ -1,4 +1,4 @@
-# Kubernates Alıştırma
+l# Kubernates Alıştırma
 
 
 ## Senaryo-1: Basit Bir Web Uygulaması Oluşturma ve Servisle İzole Etme
@@ -115,7 +115,7 @@ Oluşan servisi kontrol etmek için;
 Deployment'i manuel olarak ölçeklendirerek test etmek için; 
 
 ```bash
-  kubectl scale deployment app-python --replicas=5
+  kubectl scale deployment deployment-app-python --replicas=5
 ```
   
   
