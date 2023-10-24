@@ -111,5 +111,11 @@ Oluşan servisi kontrol etmek için;
 ```bash
   kubectl get services
 ```
+
+Deployment'i manuel olarak ölçeklendirerek test etmek için; 
+
+```bash
+  kubectl scale deployment app-python --replicas=5
+```
   
   
