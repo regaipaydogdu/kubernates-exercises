@@ -1,4 +1,4 @@
-l# Kubernates Alıştırma
+# Kubernates Alıştırma
 
 
 ## Senaryo-1: Basit Bir Web Uygulaması Oluşturma ve Servisle İzole Etme
